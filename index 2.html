@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#05080d">
+<meta name="description" content="الوجه الثاني — تجربة تفاعلية لاكتشاف نمط شخصيتك.">
+<title>الوجه الثاني | اكتشف شخصيتك</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&display=swap');
+:root{--bg:#05080d;--panel:#0b121c;--panel2:#101d2a;--gold:#f4bf55;--gold2:#ffe3a0;--blue:#59b9e9;--muted:#a6b0bd;--line:rgba(255,218,146,.28);--white:#f8f7f2}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(ellipse at 50% -15%,#173047 0%,#080d15 40%,#030509 80%);color:var(--white);font-family:'Cairo',system-ui,-apple-system,sans-serif;min-height:100vh}button{font:inherit;cursor:pointer}button:focus-visible{outline:2px solid var(--gold);outline-offset:3px}.shell{width:min(100%,540px);margin:auto;min-height:100vh;padding:0 16px 28px;position:relative;overflow:hidden}.topbar{display:flex;align-items:center;justify-content:space-between;padding:20px 2px 12px;border-bottom:1px solid rgba(255,255,255,.07)}.brand{display:flex;align-items:center;gap:10px;font-weight:900;letter-spacing:.2px}.brand-mark{width:38px;height:38px;border:1px solid var(--gold);border-radius:50%;display:grid;place-items:center;color:var(--gold);box-shadow:0 0 20px #f4bf5520}.brand-mark svg{width:22px}.tiny{font-size:11px;color:var(--muted)}.pill{border:1px solid #293949;border-radius:30px;padding:6px 11px;color:#c4d0dc;font-size:11px}.hero{padding:22px 0 16px}.hero-art{height:285px;position:relative;border-radius:22px;overflow:hidden;border:1px solid rgba(255,213,133,.22);background:linear-gradient(180deg,transparent 45%,#05080df2 100%),linear-gradient(110deg,#06111b 0%,#132a3b 42%,#05080d 100%);isolation:isolate}.hero-art:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,#05080d00,#05080d2b),url('https://images.unsplash.com/photo-1518791841217-8f162f1e1131?auto=format&fit=crop&w=1000&q=85') center 42%/cover;opacity:.32;filter:grayscale(.25);z-index:-2}.hero-art:after{content:"";position:absolute;inset:0;background:radial-gradient(ellipse at 52% 25%,#f5bd5630,transparent 42%),linear-gradient(0deg,#05080d 0%,transparent 70%);z-index:-1}.silhouette{position:absolute;inset:18px 0 0;display:grid;place-items:center;font-size:112px;filter:drop-shadow(0 12px 30px #000);opacity:.9}.orbit{position:absolute;width:190px;height:190px;border:1px solid #f4bf5555;border-radius:50%;top:25px;left:calc(50% - 95px);box-shadow:0 0 55px #f4bf5510,inset 0 0 45px #f4bf5509}.hero-copy{position:absolute;bottom:20px;right:20px;left:20px;text-align:center}.eyebrow{font-size:11px;letter-spacing:2px;color:var(--gold);font-weight:800}.hero h1{font-size:clamp(32px,9vw,46px);line-height:1.2;margin:7px 0 10px;font-weight:900}.hero h1 span{color:var(--gold)}.hero-copy p{font-size:13px;line-height:1.9;color:#d4dce4;margin:0 auto;max-width:330px}.gold-button{width:100%;border:0;border-radius:14px;background:linear-gradient(105deg,#ffe5a1,#e8a934 55%,#f6ce70);color:#17120a;font-weight:900;padding:14px 18px;box-shadow:0 7px 30px #f0b64120;transition:transform .18s,filter .18s}.gold-button:active,.outline-button:active{transform:scale(.985)}.button-arrow{font-size:18px;margin-right:8px}.feature-row{display:grid;grid-template-columns:repeat(3,1fr);gap:9px;margin:18px 0 20px}.feature{border:1px solid #1d2b39;background:#09111a;border-radius:13px;padding:12px 7px;text-align:center}.feature .ico{font-size:20px;color:var(--gold)}.feature strong{display:block;font-size:11px;margin:4px 0}.feature small{display:block;font-size:10px;color:var(--muted);line-height:1.7}.signature{margin-top:18px;padding:15px 0 3px;border-top:1px solid rgba(255,255,255,.07);display:flex;justify-content:space-between;align-items:center;gap:12px}.sign-name{font-size:19px;font-style:italic;color:var(--gold2);font-weight:800}.sign-caption{font-size:10px;color:#9ca9b6}.contact{color:#f2f4f7;text-decoration:none;font-size:12px;direction:ltr;display:inline-flex;align-items:center;gap:7px;border:1px solid #263744;border-radius:25px;padding:8px 10px}.contact span{color:#5fe09b;font-size:16px}.screen{display:none;animation:appear .35s ease}.screen.active{display:block}@keyframes appear{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}.quiz-head{padding:20px 0 15px}.back-row{display:flex;align-items:center;justify-content:space-between;color:var(--muted);font-size:12px;margin-bottom:14px}.back-btn{background:none;border:0;color:#d9e1e9;padding:5px 0}.progress{height:4px;background:#1b2936;border-radius:10px;overflow:hidden}.progress span{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--gold),#fff0bd);transition:width .25s}.q-count{color:var(--gold);font-size:12px}.question-art{height:165px;border-radius:18px;overflow:hidden;position:relative;margin:5px 0 20px;background:linear-gradient(130deg,#142b3a,#070a10);border:1px solid #243748;display:flex;align-items:end;padding:18px}.question-art:before{content:"";position:absolute;inset:0;background:linear-gradient(0deg,#06090f 0%,#06090f30 100%),url('https://images.unsplash.com/photo-1519608487953-e999c86e7455?auto=format&fit=crop&w=900&q=80') center/cover;opacity:.55}.question-art .q-symbol{position:absolute;top:17px;left:20px;font-size:55px;opacity:.5}.question-art p{position:relative;margin:0;font-size:12px;color:#d6e0e8}.question-title{font-size:22px;line-height:1.65;font-weight:800;margin:0 0 18px}.answers{display:grid;gap:10px}.answer{width:100%;display:flex;align-items:center;gap:12px;text-align:right;border:1px solid #334655;border-radius:13px;background:linear-gradient(110deg,#0a131d,#101d29);color:#f5f6f7;padding:13px 14px;min-height:61px;transition:.18s}.answer:hover{border-color:#d7ad57}.answer.selected{border-color:var(--gold);background:linear-gradient(110deg,#342a17,#14202a);box-shadow:0 0 0 1px #f4bf5520}.answer .ans-icon{width:34px;height:34px;border-radius:10px;background:#182736;color:var(--gold);display:grid;place-items:center;flex-shrink:0;font-size:18px}.answer .ans-text{font-size:13px;line-height:1.7}.next-wrap{margin-top:18px}.outline-button{width:100%;border:1px solid #b88b3d;border-radius:14px;background:#070b10;color:var(--gold2);padding:13px;font-weight:800}.outline-button:disabled{opacity:.35;cursor:not-allowed}.result-art{position:relative;overflow:hidden;border-radius:20px;min-height:280px;border:1px solid #9f793b;background:radial-gradient(ellipse at 75% 30%,#173b50,#07101a 55%,#030509);padding:22px 18px;display:flex;flex-direction:column;justify-content:flex-end}.result-art:before{content:"";position:absolute;inset:0;background:linear-gradient(0deg,#030509 0%,#03050922 100%),url('https://images.unsplash.com/photo-1473448912268-2022ce9509d8?auto=format&fit=crop&w=900&q=85') center/cover;opacity:.45}.result-art>*{position:relative}.result-tag{color:var(--gold);font-size:11px;font-weight:800}.result-emoji{position:absolute!important;top:16px;left:20px;font-size:92px;filter:drop-shadow(0 5px 20px #000)}.result-art h2{font-size:31px;margin:5px 0;color:var(--gold2);line-height:1.4}.result-art p{margin:0;color:#d9e1e9;font-size:13px;line-height:1.9}.result-sub{margin:18px 0 10px;font-size:17px}.stats{display:grid;gap:12px;background:#0a111a;border:1px solid #1e2c3a;border-radius:15px;padding:16px}.stat-line{display:grid;grid-template-columns:95px 1fr 35px;gap:8px;align-items:center;font-size:11px;color:#d6dce2}.meter{height:5px;border-radius:10px;background:#263441;overflow:hidden}.meter span{height:100%;display:block;background:linear-gradient(90deg,#a9792b,#ffdf8c);border-radius:10px}.insight-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:12px}.insight{border:1px solid #263440;border-radius:13px;background:#0b121a;padding:13px}.insight b{display:block;color:var(--gold);font-size:12px;margin-bottom:5px}.insight p{font-size:11px;line-height:1.8;color:#c1cbd5;margin:0}.result-actions{display:grid;gap:10px;margin-top:17px}.share-button{border:0;background:linear-gradient(110deg,#ffe4a0,#e5a52e);color:#17120a;font-weight:900;padding:14px;border-radius:13px}.restart-button{border:1px solid #344454;background:#0b121b;color:#dce4ed;padding:12px;border-radius:13px}.notice{color:#8695a4;font-size:10px;line-height:1.8;text-align:center;margin:13px 4px}.footer-credit{text-align:center;padding-top:20px;color:#8794a2;font-size:10px;line-height:2}.footer-credit b{color:var(--gold2);font-size:13px}.toast{position:fixed;bottom:20px;left:50%;transform:translate(-50%,20px);background:#182632;color:#fff;border:1px solid #425361;padding:10px 15px;border-radius:12px;font-size:12px;opacity:0;pointer-events:none;transition:.25s;z-index:10;white-space:nowrap}.toast.show{opacity:1;transform:translate(-50%,0)}.fingerprint{color:var(--gold);font-size:22px;text-align:center;margin-top:16px;opacity:.8}
+@media(min-width:600px){body{padding:20px 0}.shell{border:1px solid #1a2633;border-radius:24px;min-height:calc(100vh - 40px);box-shadow:0 25px 100px #0009}.hero-art{height:315px}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+<main class="shell">
+  <header class="topbar">
+    <div class="brand"><div class="brand-mark" aria-hidden="true">◉</div><div><div>الوجه الثاني</div><div class="tiny">اكتشف ما وراء الظاهر</div></div></div>
+    <div class="pill">✦ تجربة شخصية</div>
+  </header>
+
+  <section class="screen active" id="home">
+    <div class="hero">
+      <div class="hero-art">
+        <div class="orbit"></div>
+        <div class="silhouette" aria-hidden="true">🎭</div>
+        <div class="hero-copy">
+          <div class="eyebrow">THE OTHER SIDE OF YOU</div>
+          <h1>الوجه <span>الثاني</span></h1>
+          <p>كل شخص يحمل جانباً لا يظهره للجميع…<br>هل أنت مستعد لاكتشاف جانبك الخفي؟</p>
+        </div>
+      </div>
+    </div>
+    <button class="gold-button" id="startBtn">اكتشف وجهك الثاني <span class="button-arrow">←</span></button>
+    <div class="feature-row">
+      <div class="feature"><div class="ico">◷</div><strong>سريع</strong><small>أسئلة قصيرة<br>بدون تعقيد</small></div>
+      <div class="feature"><div class="ico">✧</div><strong>شخصي</strong><small>نتيجة مبنية<br>على إجاباتك</small></div>
+      <div class="feature"><div class="ico">↗</div><strong>قابل للمشاركة</strong><small>شارك نتيجتك<br>مع أصدقائك</small></div>
+    </div>
+    <div class="signature">
+      <div><div class="sign-name">سنان السلطاني</div><div class="sign-caption">برمجة وتصميم التجربة</div></div>
+      <a class="contact" href="https://wa.me/9647759099295" target="_blank" rel="noopener"><span>◉</span> 07759099295</a>
+    </div>
+    <div class="fingerprint">⌁</div>
+  </section>
+
+  <section class="screen" id="quiz">
+    <div class="quiz-head">
+      <div class="back-row"><button class="back-btn" id="backBtn">→ رجوع</button><span class="q-count" id="qCount">السؤال 1 من 8</span></div>
+      <div class="progress"><span id="progressBar"></span></div>
+    </div>
+    <div class="question-art"><span class="q-symbol" id="qSymbol">✦</span><p>اختَر الإجابة الأقرب لطبيعتك، مو الإجابة المثالية.</p></div>
+    <h2 class="question-title" id="questionTitle"></h2>
+    <div class="answers" id="answers"></div>
+    <div class="next-wrap"><button class="outline-button" id="nextBtn" disabled>السؤال التالي ←</button></div>
+    <p class="notice">ماكو إجابة صحيحة أو خاطئة. اختَر اللي يشبهك فعلاً.</p>
+  </section>
+
+  <section class="screen" id="result">
+    <div class="quiz-head"><div class="back-row"><span>✦ نتيجتك الخاصة</span><span>الوجه الثاني</span></div></div>
+    <div class="result-art">
+      <div class="result-tag">ملف شخصيتك</div>
+      <div class="result-emoji" id="resultEmoji">🐺</div>
+      <h2 id="resultName">الذئب الصامت</h2>
+      <p id="resultDesc"></p>
+    </div>
+    <h3 class="result-sub">ملامح شخصيتك</h3>
+    <div class="stats" id="stats"></div>
+    <div class="insight-grid">
+      <div class="insight"><b>✦ نقطة قوتك</b><p id="strength"></p></div>
+      <div class="insight"><b>◇ انتبه إلى</b><p id="watchout"></p></div>
+    </div>
+    <div class="result-actions">
+      <button class="share-button" id="shareBtn">↗ شارك نتيجتك</button>
+      <button class="outline-button" id="whatsBtn">أرسل النتيجة لصديق عبر واتساب</button>
+      <button class="restart-button" id="restartBtn">↻ جرّب مرة ثانية</button>
+    </div>
+    <p class="notice">هذه تجربة ترفيهية للتأمل في الذات، وليست تقييماً نفسياً أو تشخيصاً علمياً.</p>
+    <div class="signature">
+      <div><div class="sign-name">سنان السلطاني</div><div class="sign-caption">برمجة وتصميم التطبيقات والمواقع</div></div>
+      <a class="contact" href="https://wa.me/9647759099295" target="_blank" rel="noopener"><span>◉</span> 07759099295</a>
+    </div>
+  </section>
+  <div class="footer-credit">صُنعت بشغف<br><b>سنان السلطاني</b><br>برمجة وتصميم تجارب رقمية</div>
+</main>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<script>
+const questions = [
+ {q:"عندك وقت فراغ طويل، شنو تختار تسوي؟",s:"☾",a:[["أطلع وأكتشف مكان جديد","explorer","⌁"],["أقضي وقتي بشي أحبه وحدي","observer","◉"],["أجمع أصدقائي ونسوي شي ممتع","leader","✦"],["أتعلم شي جديد وأخطط لخطوة جاية","strategist","◇"]]},
+ {q:"إذا شخص خذلك بوقت كنت محتاجه، شتسوي؟",s:"⚡",a:[["أواجهه بصراحة وأوضح موقفي","leader","↗"],["أسكت وأراقب أفعاله بعدين","observer","◉"],["أتجاوز وأركز على نفسي","independent","✧"],["أفهم السبب قبل ما أحكم","strategist","◇"]]},
+ {q:"لما تدخل مكان جديد وما تعرف أحد، شلون تتصرف؟",s:"✧",a:[["أبادر وأتعرف على الموجودين","leader","✦"],["أراقب الجو وبعدها أقرر","observer","◉"],["أتصرف بطبيعتي وأشوف شنو يصير","explorer","⌁"],["أبحث عن شخص أو موضوع مشترك","strategist","◇"]]},
+ {q:"إذا فشلت بشي كنت متأكد تنجح بيه؟",s:"↗",a:[["أرجع أحاول بطريقة أقوى","leader","↗"],["أحلل الغلط حتى ما أكرره","strategist","◇"],["آخذ وقتي وأرجع من أكون جاهز","observer","◉"],["أغير الطريق وأجرب فرصة ثانية","explorer","⌁"]]},
+ {q:"شنو أكثر شي يزعجك؟",s:"◈",a:[["أحد يقرر عني أو يقيّد حريتي","independent","✧"],["أحد يقلل من جهدي","leader","✦"],["الضوضاء وكثرة الدراما","observer","◉"],["الفوضى وعدم وضوح الأمور","strategist","◇"]]},
+ {q:"إذا صديقك عنده مشكلة كبيرة، شنو أول شي تسويه؟",s:"♡",a:[["أوقف وياه وأساعده بالفعل","leader","✦"],["أسمعه بهدوء وأفهمه","observer","◉"],["أدور حلول عملية للمشكلة","strategist","◇"],["أرفع معنوياته وأطلعه من الجو","explorer","⌁"]]},
+ {q:"أي عبارة أقرب إلك؟",s:"☼",a:[["أحب أكون حر وأختار طريقي","independent","✧"],["أفكر قبل لا أحچي أو أتحرك","strategist","◇"],["أفهم الناس حتى لو ما يحچون","observer","◉"],["أحوّل الأفكار إلى أفعال","leader","↗"]]},
+ {q:"من تتخيل نفسك بعد كم سنة، شنو الأهم عندك؟",s:"♜",a:[["أكون بنيت شي أفتخر بيه","leader","✦"],["أعيش حياة هادئة على طريقتي","independent","✧"],["أكون فاهم نفسي والناس أكثر","observer","◉"],["أكون شفت تجارب وأماكن كثيرة","explorer","⌁"]]}
+];
+const profiles = {
+ observer:{name:"الذئب الصامت",emoji:"🐺",desc:"تراقب أكثر مما تتكلم، وتحب تفهم الصورة كاملة قبل ما تكشف أوراقك. هدوءك مو ضعف؛ غالباً هو طريقتك حتى تختار وقتك وكلامك.",strength:"ملاحظة التفاصيل وفهم المواقف قبل اتخاذ القرار.",watchout:"لا تخلي صمتك يمنع الناس القريبين منك من فهم احتياجك.",stats:[["التركيز",91],["قراءة المواقف",88],["الهدوء",84],["المبادرة",63]]},
+ strategist:{name:"العقل المدبّر",emoji:"♟️",desc:"تحب تربط التفاصيل ببعضها وتفكر بالخطوة الجاية. ترتاح لما تكون الأمور واضحة، وغالباً تشوف احتمالات غيرك ما ينتبه إلها.",strength:"التخطيط وحل المشكلات بطريقة منظمة.",watchout:"مو كل موقف يحتاج تحليل طويل؛ مرات التجربة تعلمك أسرع.",stats:[["التخطيط",93],["التحليل",91],["الهدوء",77],["المرونة",72]]},
+ leader:{name:"القائد الخفي",emoji:"👑",desc:"لما يصير موقف، تميل تتحرك بدل ما تنتظر. تحب يكون لوجودك أثر واضح، وتقدر تجمع الناس حول هدف إذا آمنت بيه.",strength:"تحويل الأفكار إلى خطوات وتشجيع الآخرين.",watchout:"تذكّر أن الاستماع للآخرين جزء من القيادة القوية.",stats:[["المبادرة",94],["الحسم",88],["التأثير",86],["الصبر",70]]},
+ explorer:{name:"الروح الحرّة",emoji:"🦊",desc:"الروتين الطويل يطفّيك؛ تحب التجربة والاكتشاف وتتعلم من الاحتكاك بالحياة. عندك استعداد تشوف فرص بمكان غيرك يشوفه طريق مسدود.",strength:"المرونة والانفتاح على التجارب الجديدة.",watchout:"اختَر بعض الأهداف وكملها للنهاية قبل ما تنتقل لشي جديد.",stats:[["الفضول",94],["المرونة",89],["الجرأة",82],["الاستمرارية",68]]},
+ independent:{name:"النسر المستقل",emoji:"🦅",desc:"تقدّر حريتك ومساحتك، وتحب تكون قراراتك نابعة منك. ما تحتاج تصفيق الجميع حتى تعرف شنو يناسبك، وتفضّل الأصالة على المجاملة.",strength:"الاعتماد على النفس والوضوح بشأن اختياراتك.",watchout:"الاستقلال مو معناه تحمل كل شي وحدك؛ طلب المساعدة مو ضعف.",stats:[["الاستقلال",95],["الثبات",86],["الجرأة",82],["التعاون",67]]}
+};
+let current=0, answers=new Array(questions.length).fill(null), finalProfile=null;
+const $=id=>document.getElementById(id);
+function show(id){document.querySelectorAll('.screen').forEach(s=>s.classList.remove('active'));$(id).classList.add('active');window.scrollTo({top:0,behavior:'smooth'});}
+function toast(msg){const t=$('toast');t.textContent=msg;t.classList.add('show');setTimeout(()=>t.classList.remove('show'),2400);}
+function renderQuestion(){
+ const item=questions[current];$('qCount').textContent=`السؤال ${current+1} من ${questions.length}`;$('progressBar').style.width=((current+1)/questions.length*100)+'%';$('questionTitle').textContent=item.q;$('qSymbol').textContent=item.s;$('answers').innerHTML='';$('nextBtn').disabled=answers[current]===null;$('nextBtn').textContent=current===questions.length-1?'اكتشف نتيجتي ✦':'السؤال التالي ←';
+ item.a.forEach((a,i)=>{const b=document.createElement('button');b.className='answer'+(answers[current]===a[1]?' selected':'');b.innerHTML=`<span class="ans-icon">${a[2]}</span><span class="ans-text"></span>`;b.querySelector('.ans-text').textContent=a[0];b.addEventListener('click',()=>{answers[current]=a[1];renderQuestion();});$('answers').appendChild(b);});
+}
+function calculate(){const counts={observer:0,strategist:0,leader:0,explorer:0,independent:0};answers.forEach(a=>{if(a&&counts[a]!==undefined)counts[a]++});const rank=Object.entries(counts).sort((a,b)=>b[1]-a[1]);return profiles[rank[0][0]];}
+function renderResult(){
+ finalProfile=calculate();const p=finalProfile;$('resultEmoji').textContent=p.emoji;$('resultName').textContent=p.name;$('resultDesc').textContent=p.desc;$('strength').textContent=p.strength;$('watchout').textContent=p.watchout;$('stats').innerHTML='';
+ p.stats.forEach(([name,val])=>{const row=document.createElement('div');row.className='stat-line';row.innerHTML='<span></span><div class="meter"><span></span></div><strong></strong>';row.children[0].textContent=name;row.children[1].firstElementChild.style.width=val+'%';row.children[2].textContent=val+'%';$('stats').appendChild(row);});
+ show('result');
+}
+function resultText(){return `طلعت شخصيتي في تطبيق «الوجه الثاني» ✦\nشخصيتي: ${finalProfile.name}\n${finalProfile.desc}\nجرّب الاختبار واكتشف وجهك الثاني!\nبرمجة وتصميم: سنان السلطاني\nواتساب: 07759099295`;}
+$('startBtn').addEventListener('click',()=>{current=0;show('quiz');renderQuestion();});
+$('backBtn').addEventListener('click',()=>{if(current===0)show('home');else{current--;renderQuestion();}});
+$('nextBtn').addEventListener('click',()=>{if(answers[current]===null)return;if(current<questions.length-1){current++;renderQuestion();}else renderResult();});
+$('restartBtn').addEventListener('click',()=>{answers=new Array(questions.length).fill(null);current=0;show('home');});
+$('shareBtn').addEventListener('click',async()=>{const text=resultText();if(navigator.share){try{await navigator.share({title:'نتيجتي في الوجه الثاني',text});}catch(e){}}else{try{await navigator.clipboard.writeText(text);toast('تم نسخ نتيجتك، تگدر هسه تشاركها!');}catch(e){window.prompt('انسخ نتيجتك وشاركها:',text);}}});
+$('whatsBtn').addEventListener('click',()=>{window.open('https://wa.me/?text='+encodeURIComponent(resultText()),'_blank','noopener');});
+</script>
+</body>
+</html>
